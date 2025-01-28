@@ -29,8 +29,9 @@ def reconocimiento(cadena):
 
 if __name__ == "__main__":
     print("Automata")
-    cadena = input("Ingrese la cadena binaria: ")
-    if reconocimiento(cadena):
-        print(f"La cadena {cadena} fue reconocida CORRECTA")
-    else:
-        print(f"La cadena {cadena} fue reconocida INCORRECTA")
+    while True:
+        cadena = input("Ingrese la cadena binaria: ")
+        if reconocimiento(cadena):
+            print(f"La cadena {cadena} fue reconocida CORRECTA")
+        else:
+            print(f"La cadena {cadena} fue reconocida INCORRECTA")
